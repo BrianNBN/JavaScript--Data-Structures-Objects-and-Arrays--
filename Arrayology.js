@@ -18,5 +18,6 @@ console.log([0, 1, 2, 3, 4].slice(2));
 
 function remove(array, index) {
     return array.slice(0, index)
-     .concat
+     .concat(array.slice(index + 1));
 }
+console.log(remove(["a","b","c","d","e"], 2));
